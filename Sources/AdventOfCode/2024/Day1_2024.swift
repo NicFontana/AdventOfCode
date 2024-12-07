@@ -14,7 +14,7 @@ enum Day1_2024 {
 3   9
 3   3
 """
-    static func runPartOne() -> Int {
+    static func solvePartOne() -> Int {
         var l1: [Int] = []
         var l2: [Int] = []
         let idsPairs = Utils.readInputFile(day: 1, year: 2024).components(separatedBy: .newlines)
@@ -44,7 +44,7 @@ enum Day1_2024 {
         })
     }
     
-    static func runPartTwo() -> Int {
+    static func solvePartTwo() -> Int {
         // Occurrences of the given ID in the second list
         var occurences: [Int: Int] = [:]
         // IDs that appear in the first list
