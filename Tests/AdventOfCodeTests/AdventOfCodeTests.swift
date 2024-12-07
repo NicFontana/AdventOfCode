@@ -1,6 +1,9 @@
 import Testing
 @testable import AdventOfCode
 
-@Test func example() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+@Suite("2024 Tests") struct Tests_2024 {
+  @Test func test_Day1() {
+      #expect(Day1_2024.runPartOne() == 3574690)
+      #expect(Day1_2024.runPartTwo() == 22565391)
+  }
 }
